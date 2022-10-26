@@ -1,0 +1,124 @@
+:root {
+  --orange: rgb(251, 116, 19);
+  --white: rgb(255, 255, 255);
+  --light-grey: rgb(149, 158, 172);
+  --medium-grey: rgb(124, 135, 152);
+  --bg-grey-dark-blue: rgb(29, 35, 42);
+  --bg-dark-blue: rgb(24, 27, 33);
+  --dark-blue: rgb(37, 45, 55);
+  --very-dark-blue: rgb(20, 21, 25);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
+.card {
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-grey-dark-blue),
+    var(--bg-dark-blue)
+  );
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 360px;
+  justify-content: space-between;
+  padding: 30px;
+  width: 360px;
+}
+
+.star {
+  width: 20px;
+  background-color: var(--dark-blue);
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.title {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.text {
+  color: var(--medium-grey);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  background-color: var(--dark-blue);
+  border: 0;
+  border-radius: 100%;
+  color: var(--medium-grey);
+  cursor: pointer;
+  height: 40px;
+  margin: 0;
+  width: 40px;
+}
+
+.buttons button:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.buttons button:focus {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  border: 0;
+  border-radius: 45px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  height: 45px;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.tku {
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.thankyou {
+  width: 150px;
+}
+
+.grade {
+  background-color: var(--dark-blue);
+  border-radius: 50px;
+  color: var(--orange);
+  display: flex;
+  line-height: 30px;
+  padding: 3px 15px;
+  text-align: center;
+  vertical-align: center;
+}
