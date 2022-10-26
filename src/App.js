@@ -34,7 +34,7 @@ function App() {
       </picture>
       <h1 className="title">How did we do?</h1>
       <p className="text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <section className="buttons">
+      <div className="buttons">
         <button type="button" onClick={() => setGrade(1)}>
           1
         </button>
@@ -50,7 +50,7 @@ function App() {
         <button type="button" onClick={() => setGrade(5)}>
           5
         </button>
-      </section>
+      </div>
       <button type="button" className="submit-btn" onClick={checkGradeAndSubmit}>
         S U B M I T
       </button>
